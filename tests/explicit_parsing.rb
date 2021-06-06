@@ -3,7 +3,7 @@ require_relative "../test_helper"
 test = Test.new("Single vs Double Quoted Strings (Explicit Parsing)", runs: 100)
 
 test.add_variant "Single Quoted" do
-  100000.times do
+  1000000.times do
     eval <<-such_parsing
     'abc'
     such_parsing
@@ -11,7 +11,7 @@ test.add_variant "Single Quoted" do
 end
 
 test.add_variant "Double Quoted" do
-  100000.times do
+  1000000.times do
     eval <<-such_parsing
     "abc"
     such_parsing

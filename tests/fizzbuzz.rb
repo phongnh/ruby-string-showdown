@@ -3,7 +3,7 @@ require_relative "../test_helper"
 test = Test.new("Single vs Double Quoted Strings (FizzBuzz)", runs: 100)
 
 test.add_variant "Single Quoted" do
-  100000.times do |n|
+  1000000.times do |n|
     string = ''
     string << 'Fizz' if n % 3 == 0
     string << 'Buzz' if n % 5 == 0
@@ -12,7 +12,7 @@ test.add_variant "Single Quoted" do
 end
 
 test.add_variant "Double Quoted" do
-  100000.times do |n|
+  1000000.times do |n|
     string = ""
     string << "Fizz" if n % 3 == 0
     string << "Buzz" if n % 5 == 0
